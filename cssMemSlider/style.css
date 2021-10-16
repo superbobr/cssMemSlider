@@ -55,28 +55,33 @@ body {
 .container .control {
     position: absolute;
     margin-left: -50px;
-    left: 50%;
+    left: 40%;
 }
 
 .container label {
     cursor: pointer;
     display: inline-block;
-    height: 28px;
+    height: 38px;
     margin: 10px;
     position: relative;
-    width: 28px;
+    width: 38px;
     border-radius: 50%;
+    border: 1px solid green;
+    -webkit-transition: background ease-in-out .5s;
+    -moz-transition: background ease-in-out .5s;
+    -o-transition: background ease-in-out .5s;
+    transition: background ease-in-out .5s;
 }
 
 .container label:after {
-    border: 1px solid green;
+
     content: " ";
     display: block;
-    height: 32px;
+    height: 58px;
     left: -4px;
     position: absolute;
     top: -4px;
-    width: 32px;
+    width: 58px;
     border-radius: 50%;
 }
 
@@ -93,8 +98,6 @@ body {
 #slide4:checked~.slider>.mem4 {
     opacity: 1;
     z-index: 1;
-    transform: none;
-    -webkit-filter: none;
 }
 
 .container label:hover,
@@ -102,17 +105,19 @@ body {
 #slide2:checked~.controls label:nth-of-type(2),
 #slide3:checked~.controls label:nth-of-type(3),
 #slide4:checked~.controls label:nth-of-type(4) {
-    background: red;
+    background: yellow;
 }
 
-.slides {
-    transform: rotate(55deg);
-    -webkit-filter: hue-rotate(90deg);
-    transition: 1s;
-}
+.slides {}
 
-.slides {
-    transform: rotate(55deg);
-    -webkit-filter: hue-rotate(90deg);
-    transition: 1s;
+.slides {}
+
+.text {
+    position: fixed;
+    padding: 5px;
+    font-size: 40px;
+    color: yellow;
+    border: dashed 2px yellow;
+    top: 75%;
+    left: 3%;
 }
