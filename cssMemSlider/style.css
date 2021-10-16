@@ -10,10 +10,10 @@ body {
 }
 
 .container {
-    height: 640px;
-    margin: 50px auto 0;
+    height: 450px;
+    margin: 10px auto;
     position: relative;
-    width: 640px;
+    width: 450px;
 }
 
 .container>input {
@@ -38,18 +38,22 @@ body {
 
 .mem1 {
     background-image: url(assets/copy.jpg);
+    background-size: cover;
 }
 
 .mem2 {
     background-image: url(assets/lang.jpg);
+    background-size: cover;
 }
 
 .mem3 {
     background-image: url(assets/learn.jpg);
+    background-size: cover;
 }
 
 .mem4 {
     background-image: url(assets/split.jpg);
+    background-size: cover;
 }
 
 .container .control {
@@ -108,14 +112,10 @@ body {
     background: yellow;
 }
 
-.slides {}
-
-.slides {}
-
 .text {
     position: fixed;
     padding: 5px;
-    font-size: 40px;
+    font-size: 30px;
     color: yellow;
     border: dashed 2px yellow;
     top: 75%;
